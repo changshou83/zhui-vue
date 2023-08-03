@@ -10,4 +10,9 @@ const __dirname = dirname(__filename);
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), UnoCSS()],
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "src"),
+    },
+  },
 });
